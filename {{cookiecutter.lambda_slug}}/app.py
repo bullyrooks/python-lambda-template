@@ -1,6 +1,6 @@
 import aws_cdk as cdk
 
-from {{ cookiecutter.safe_name }}.{{ cookiecutter.safe_name }} import {{ cookiecutter.application_name }}Stack
+from {{ cookiecutter.safe_name }}.{{ cookiecutter.safe_name }}_stack import {{ cookiecutter.application_name }}Stack
 
 
 app = cdk.App()
