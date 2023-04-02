@@ -2,8 +2,8 @@
   "lambda_name": "Test Service One",
   "application_name": "{{ cookiecutter.lambda_name|replace('-', ' ')|replace(' ', '')|replace('.', '')|trim() }}Application",
   "lambda_slug": "{{ cookiecutter.lambda_name.lower()|replace('-', ' ')|replace(' ', '-')|replace('.', '-')|trim() }}",
-  "safe_name": "{{ cookiecutter.service_slug.replace('-','_') }}",
-  "service_registry": "{{ cookiecutter.service_slug }}",
+  "safe_name": "{{ cookiecutter.lambda_slug.replace('-','_') }}",
+  "service_registry": "{{ cookiecutter.lambda_slug }}",
   "githuborg": "bullyrooks",
   "workflow_token": "GH_TOKEN"
 }
