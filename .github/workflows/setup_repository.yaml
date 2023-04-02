@@ -94,5 +94,5 @@ jobs:
           git config --global user.name "github-actions[bot]" && \
           git checkout --orphan temp-branch && \
           git add . && \
-          git commit -m 'Initial commit' && \
+          git commit -m 'fix: Initial commit' && \
           git push origin temp-branch:main -f
