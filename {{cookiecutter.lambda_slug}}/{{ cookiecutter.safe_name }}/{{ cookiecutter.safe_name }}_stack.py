@@ -43,5 +43,4 @@ class {{ cookiecutter.application_name }}Stack(Stack):
                                                         handler={{ cookiecutter.safe_name }}_lambda,
                                                         proxy=False)
 
-        {{ cookiecutter.safe_name }}_resource = {{ cookiecutter.safe_name }}_api.root.add_resource("/")
-        {{ cookiecutter.safe_name }}_resource.add_method("GET")
+        {{ cookiecutter.safe_name }}_api.root.add_method("GET")
